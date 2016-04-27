@@ -1,0 +1,62 @@
+<manifest package="com.androidhuman.example.multiwindowplayground"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <application
+        android:allowBackup="false"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:supportsRtl="false"
+        android:theme="@style/AppTheme">
+
+        <activity
+            android:name=".MainActivity"
+            android:label="@string/app_name">
+
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+
+        </activity>
+
+        <activity
+            android:name=".BasicActivity"
+            android:label="@string/basic_activity" />
+
+        <activity
+            android:name=".UnresizableActivity"
+            android:label="@string/unresizable_activity"
+            android:resizeableActivity="false"
+            android:taskAffinity="" />
+
+        <activity
+            android:name=".AdjacentActivity"
+            android:label="@string/adjacent_activity"
+            android:launchMode="singleInstance" />
+
+        <activity
+            android:name=".ConfigChangesActivity"
+            android:configChanges="screenSize|smallestScreenSize|screenLayout|orientation"
+            android:label="@string/config_changes_activity" />
+
+        <activity
+            android:name=".MinimumSizeActivity"
+            android:label="@string/minimum_size_activity"
+            android:launchMode="singleInstance">
+
+            <layout
+                android:defaultHeight="500dp"
+                android:defaultWidth="320dp"
+                android:gravity="top|start"
+                android:minimalHeight="500dp"
+                android:minimalWidth="320dp" />
+
+        </activity>
+
+        <activity
+            android:name=".FullScreenLifecycleActivity"
+            android:label="@string/full_screen_lifecycle" />
+
+    </application>
+
+</manifest>

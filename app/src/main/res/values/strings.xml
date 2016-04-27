@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">MultiWindowPlayground</string>
+
+    <string name="basic_activity">Basic Activity</string>
+    <string name="unresizable_activity">Unresizable Activity</string>
+    <string name="adjacent_activity">Adjacent Activity</string>
+    <string name="config_changes_activity">Config changes handling</string>
+    <string name="minimum_size_activity">Minimum size with 500dp</string>
+    <string name="full_screen_lifecycle">Lifecycle display</string>
+</resources>

@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v4.widget.NestedScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <Button
+            android:id="@+id/btn_activity_main_basic_activity"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/basic_activity" />
+
+        <Button
+            android:id="@+id/btn_activity_main_unresizable_activity"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/unresizable_activity" />
+
+        <Button
+            android:id="@+id/btn_activity_main_adjacent_activity"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/adjacent_activity" />
+
+        <Button
+            android:id="@+id/btn_activity_main_config_changes_activity"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/config_changes_activity" />
+
+        <Button android:id="@+id/btn_activity_main_minimum_size_activity"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/minimum_size_activity"/>
+
+        <Button android:id="@+id/btn_activity_main_full_screen_lifecycle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/full_screen_lifecycle"/>
+
+    </LinearLayout>
+
+</android.support.v4.widget.NestedScrollView>
